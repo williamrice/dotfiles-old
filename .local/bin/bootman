@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+os=${1:NULL}
+echo $os
+
+case $os in 
+	windows|win10)
+		echo "Switching primary boot to Windows 10"
+		cp /boot/grub/grub.windowsfirst.cfg /boot/grub/grub.cfg
+		;;
+	linux)
+		echo "Switching primary boot to Linux"
+		cp /boot/grub/grub.linuxfirst.cfg /boot/grub/grub.cfg
+		;;
+	*)
+		echo "You must provide an argument for the os to boot into...exiting!"
+		;;
+esac

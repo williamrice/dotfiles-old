@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+alias spac="sudo pacman -S" \
+	pacs="pacman -Ss" \
+	cfg="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
