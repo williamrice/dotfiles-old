@@ -23,19 +23,6 @@
         },{
             "function": "powerline.segments.common.vcs.stash",
             "name": "vcs-stash"
-        }],
-        "right": [{
-            "function": "powerline.segments.common.time.date",
-            "name": "clock",
-            "display": true
-        },{
-            "function": "powerline.segments.common.wthr.weather",
-            "name": "weather",
-            "priority": 50,
-            "args": {
-                "unit": "F",
-                "location_query": "oslo, norway"
-            }
         }]
     }
 }
