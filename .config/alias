@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-alias spac="sudo pacman -S" \
-	pacs="pacman -Ss" \
-	config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME" \
+
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
