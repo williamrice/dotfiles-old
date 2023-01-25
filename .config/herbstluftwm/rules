@@ -30,8 +30,6 @@ hc rule title~'Mail' floating=on floatplacement=center floating_geometry=1500x80
 hc rule title~'Music' floating=on floatplacement=center floating_geometry=1200x800
 hc rule title~'Todo' floating=on floatplacement=center floating_geometry=1000x650
 
-#hc rule title~'Hulu | Watch' floating=on
-
 #------------#
 # Games/Apps #
 #------------#
@@ -43,9 +41,8 @@ hc load 10 '
 hc rule class="Steam" tag=10 index=00 pseudotile=off
 hc rule class="discord" tag=9 index=00 pseudotile=off
 hc rule class="slack" tag=9
+hc rule class="Thunar" floating=on floatplacement=center
 hc rule instance="calibre-ebook-viewer" floating=on
-hc rule instance="com.wurmonline.client.launcherfx.WurmMain" fullscreen=on
-#hc rule instance="(Zonric) Wurm Unlimited " fullscreen=on
 
 #--------------#
 # Common Terms #
