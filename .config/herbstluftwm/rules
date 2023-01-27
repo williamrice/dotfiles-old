@@ -19,6 +19,7 @@ hc rule title~'windows' floating=on floatplacement=center floating_geometry=700x
 hc rule title~'logout' floating=on floatplacement=center floating_geometry=320x200
 hc rule title~'vmach.sh' floating=on floatplacement=center floating_geometry=375x500
 hc rule title~'themesel.sh' floating=on floatplacement=center floating_geometry=375x200
+hc rule class~'Nm-connection-editor' floating=on floatplacement=center floating_geometry=375x200
 
 #------------#
 # Scatchpads #
