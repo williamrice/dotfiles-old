@@ -90,9 +90,10 @@ padding-right = 2
 module-margin-left  = 1
 module-margin-right = 1
 font-0 = "FiraCode Nerd Font Mono:pixelsize=12;0"
+font-1 = "FiraCode Nerd Font Mono:pixelsize=16;0"
 modules-left    = hlws0
 modules-center  = 
-modules-right   = pulseaudio eth wlan temperature date
+modules-right   = pulseaudio eth wlan date
 spacing = 0
 dim-value = 1.0
 wm-name =
@@ -167,6 +168,7 @@ padding-right =
 module-margin-left  = 2
 module-margin-right = 2
 font-0 = "FiraCode Nerd Font Mono:pixelsize=12;0"
+font-1 = "FiraCode Nerd Font Mono:pixelsize=16;0"
 modules-left    = hlws1
 modules-center  = 
 modules-right   = pulseaudio date space 
@@ -199,8 +201,7 @@ click-left="bash ~/.config/polybar/scripts/launcher"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
-
+label = %title:0:30:...
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;            xkeyboard               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -245,6 +246,8 @@ interval = 0.5
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
+format-font = 2
+
 
 [module/hlws1]
 type = custom/script
@@ -255,6 +258,7 @@ interval = 0.5
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
+format-font = 2
 
 [module/hlws2]
 type = custom/script
@@ -340,7 +344,7 @@ label = %percentage_used%%
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/wlan]
 type = internal/network
-interface = wifi_id
+interface = wlan0
 interval = 3.0
 
 ramp-signal-0 = 0
@@ -356,7 +360,7 @@ label-connected-foreground = ${colors.foreground}
 label-disconnected = "%ifname%  "
 label-disconnected-foreground = ${colors.foreground_alt}
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <ramp-signal> 
 format-connected-prefix = "直"
 format-connected-prefix-foreground = ${colors.good}
 format-connected-underline = #9F78E1
@@ -415,7 +419,7 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume> 
 label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
