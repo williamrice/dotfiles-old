@@ -15,8 +15,11 @@ hc mousebind $Mod-Button2 zoom
 hc mousebind $Mod-Button3 resize
 
 ##----------------------------------------##
-##-- Auto Spawn --------------------------##
+##-- Screenshot - Shutter--------------------------##
 ##----------------------------------------##
+
+hc keybind $Mod-Shift-Print spawn shutter -s
+hc keybind $Mod-Print spawn shutter -a
 
 ##----------------------------------------##
 ##-- Spawning ----------------------------##
