@@ -14,4 +14,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 	export PATH="$PATH:$(du $HOME/.local/bin | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 fi
 
+export PATH=$PATH:$HOME/.cargo/bin/
+
 [ -f ~/.Xresources ] && xrdb -merge -I$HOME ~/.Xresources
+. "$HOME/.cargo/env"
