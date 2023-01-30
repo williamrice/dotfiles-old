@@ -93,7 +93,7 @@ font-0 = "FiraCode Nerd Font Mono:pixelsize=12;0"
 font-1 = "FiraCode Nerd Font Mono:pixelsize=16;0"
 modules-left    = hlws0
 modules-center  = 
-modules-right   = pulseaudio eth wlan date
+modules-right   = pulseaudio eth date
 spacing = 0
 dim-value = 1.0
 wm-name =
@@ -376,7 +376,7 @@ format-disconnected-underline = ${self.format-connected-underline}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/eth]
 type = internal/network
-interface = enp3s0
+interface = enp5s0
 interval = 3.0
 
 label-connected = %local_ip%
