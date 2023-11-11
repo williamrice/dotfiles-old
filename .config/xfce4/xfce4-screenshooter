@@ -1,8 +1,0 @@
-app=/usr/bin/chromium
-last_user=
-screenshot_dir=file:$HOME/Images
-action=1
-delay=0
-region=1
-show_mouse=0
-
